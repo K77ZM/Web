@@ -1,0 +1,274 @@
+1. تغيير النص (Example)
+المهمة: تغيير نص العنوان عند تشغيل الكود مباشرة.
+
+HTML
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="title">Original Text</h1>
+    <script>
+        document.getElementById("title").innerHTML = "New Text";
+    </script>
+</body>
+</html>
+2. صفحة تفاعلية مع زر (Procedure)
+المهمة: تغيير النص عند النقر على الزر.
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+</head>
+<body>
+    <h1 id="title">Hello Students</h1>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText() {
+            document.getElementById("title").innerHTML = "Text changed by JavaScript";
+        }
+    </script>
+</body>
+</html>
+3. الحاسبة المتكاملة (حل الواجب: الجمع، الطرح، الضرب)
+المهمة: تعديل الحاسبة لتشمل الطرح والضرب كما مطلوب في الواجب المنزلي.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <br><br>
+    <button onclick="addNumbers()">Add</button>
+    <button onclick="subtractNumbers()">Subtract</button>
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <p id="result">Result appears here</p>
+
+    <script>
+        function addNumbers() {
+            let first = document.getElementById("num1").value;
+            let second = document.getElementById("num2").value;
+            let sum = Number(first) + Number(second);
+            document.getElementById("result").textContent = "Result = " + sum;
+        }
+
+        function subtractNumbers() {
+            let first = document.getElementById("num1").value;
+            let second = document.getElementById("num2").value;
+            let sub = Number(first) - Number(second);
+            document.getElementById("result").textContent = "Result = " + sub;
+        }
+
+        function multiplyNumbers() {
+            let first = document.getElementById("num1").value;
+            let second = document.getElementById("num2").value;
+            let mult = Number(first) * Number(second);
+            document.getElementById("result").textContent = "Result = " + mult;
+        }
+    </script>
+</body>
+</html>
+4. تطبيق الترحيب (Greeting Application)
+المهمة: إظهار رسالة ترحيبية باسم المستخدم.
+
+HTML
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="studentName" placeholder="Enter your name">
+    <button onclick="welcome()">Welcome</button>
+    <p id="message"></p>
+
+    <script>
+        function welcome() {
+            let name = document.getElementById("studentName").value;
+            document.getElementById("message").innerHTML = "Welcome " + name;
+        }
+    </script>
+</body>
+</html>
+5. تغيير التنسيق (DOM Styling)
+المهمة: تغيير لون الخط والخلفية باستخدام JavaScript.
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Style</title>
+</head>
+<body>
+    <h1 id="title">DOM Styling Example</h1>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            let heading = document.getElementById("title");
+            heading.textContent = "Style Changed";
+            heading.style.color = "red";
+            heading.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+1. ربط HTML مع JavaScript (External Method)
+المهمة: إظهار رسالة تنبيه بمجرد فتح الصفحة.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 2 JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Lecture</h1>
+    <script>
+        alert("Hello Student");
+    </script>
+</body>
+</html>
+2. إظهار رسالة عند الضغط على زر (Example 2)
+المهمة: تشغيل دالة التنبيه فقط عند نقر المستخدم على الزر.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Alert</title>
+</head>
+<body>
+    <h1>Button Example</h1>
+    <button onclick="showMessage()">Click Me</button>
+    <script>
+        function showMessage() {
+            alert("Welcome to JavaScript");
+        }
+    </script>
+</body>
+</html>
+3. تغيير النص داخل الصفحة (Example 3)
+المهمة: البحث عن عنصر بواسطة المعرف (ID) واستبدال نصه عند النقر.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text</title>
+</head>
+<body>
+    <h1 id="title">Original Text</h1>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText() {
+            document.getElementById("title").innerHTML = "Text Changed";
+        }
+    </script>
+</body>
+</html>
+4. عرض نتيجة عملية حسابية (Example 4)
+المهمة: حساب مجموع متغيرين وعرض النتيجة داخل عنصر <h1>.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Result</title>
+</head>
+<body>
+    <h1 id="result">Result will appear here</h1>
+    <button onclick="showSum()">Show Sum</button>
+    <script>
+        function showSum() {
+            let a = 5;
+            let b = 7;
+            let sum = a + b;
+            document.getElementById("result").innerHTML = sum;
+        }
+    </script>
+</body>
+</html>
+5. أخذ مدخلات المستخدم وعرض تنبيه (Example 5)
+المهمة: قراءة القيمة من حقل الإدخال وعرضها في رسالة تنبيه.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <input type="text" id="username">
+    <button onclick="sayHello()">Send</button>
+    <script>
+        function sayHello() {
+            let name = document.getElementById("username").value;
+            alert("Hello " + name);
+        }
+    </script>
+</body>
+</html>
+6. عرض المدخلات داخل الصفحة (Example 6)
+المهمة: قراءة الاسم وعرضه مباشرة داخل فقرة <p> بدلاً من التنبيه.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Name</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    <input type="text" id="username">
+    <button onclick="showName()">Show</button>
+    <p id="output">Your name will appear here</p>
+    <script>
+        function showName() {
+            let name = document.getElementById("username").value;
+            document.getElementById("output").innerHTML = "Hello " + name;
+        }
+    </script>
+</body>
+</html>
+7. حل الواجب (تعديل الحاسبة لتشمل الطرح والضرب)
+المهمة: بناءً على "Home Work" في الملف الأول، تم دمج العمليات في كود واحد.  
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Calculator</title>
+</head>
+<body>
+    <h1>Advanced Calculator</h1>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <br><br>
+    <button onclick="calculate('add')">Add</button>
+    <button onclick="calculate('sub')">Subtract</button>
+    <button onclick="calculate('mult')">Multiply</button>
+    <p id="result">Result appears here</p>
+
+    <script>
+        function calculate(operation) {
+            let n1 = Number(document.getElementById("num1").value);
+            let n2 = Number(document.getElementById("num2").value);
+            let res = 0;
+            
+            if (operation === 'add') res = n1 + n2;
+            else if (operation === 'sub') res = n1 - n2;
+            else if (operation === 'mult') res = n1 * n2;
+            
+            document.getElementById("result").innerHTML = "Result = " + res;
+        }
+    </script>
+</body>
+</html>
