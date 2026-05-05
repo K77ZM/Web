@@ -21,11 +21,11 @@ int main() {
         }
     }
 
-    cout << "Enter the message (CAPITAL ONLY): ";
+    cout << "Enter the message : ";
     string s;
     cin >> s;
 
-    cout << "Enter the key (CAPITAL ONLY): ";
+    cout << "Enter the key : ";
     string key;
     cin >> key;
 
@@ -77,11 +77,11 @@ int main() {
         }
     }
 
-    cout << "Enter the encrypted message (CAPITAL ONLY): ";
+    cout << "Enter the encrypted message : ";
     string encrypt;
     cin >> encrypt;
 
-    cout << "Enter the key (CAPITAL ONLY): ";
+    cout << "Enter the key : ";
     string key;
     cin >> key;
 
