@@ -82,12 +82,8 @@ myQueue = Queue()
 myQueue.enqueue('A')
 myQueue.enqueue('B')
 myQueue.enqueue('C')
-
+myQueue.dequeue()
 print(myQueue.queue)
-print(myQueue.dequeue())
-print(myQueue.peek())
-print(myQueue.isEmpty())
-print(myQueue.size())
 
 
 
